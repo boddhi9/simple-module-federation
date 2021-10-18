@@ -34,11 +34,9 @@ module.exports = {
       },
       remotes: {
         search: `promise new Promise(resolve => {
-          const urlParams = new URLSearchParams(window.location.search)
-          const version = urlParams.get('app1VersionParam')
-          const remoteUrlWithVersion = 'http://localhost:3004/' + version + '/remoteEntry.js'
+          const remoteUrl = 'http://localhost:3004/remoteEntry.js'
           const script = document.createElement('script')
-          script.src = remoteUrlWithVersion
+          script.src = remoteUrl
           script.onload = () => {
             // the injected script has loaded and is available on window
             // we can now resolve this Promise
