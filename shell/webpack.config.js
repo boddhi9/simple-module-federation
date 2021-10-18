@@ -1,7 +1,7 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { ModuleFederationPlugin } = require('webpack').container
-const ExternalTemplateRemotesPlugin = require('external-remotes-plugin')
-const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { ModuleFederationPlugin } = require('webpack').container;
+const ExternalTemplateRemotesPlugin = require('external-remotes-plugin');
+const path = require('path');
 
 module.exports = {
   entry: './src/index',
@@ -29,6 +29,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'shell',
       remotes: {
+        header: 'header@[headerUrl]/remoteEntry.js',
+        footer: 'footer@[footerUrl]/remoteEntry.js',
+        content: 'content@[contentUrl]/remoteEntry.js',
         app1: 'app1@[app1Url]/remoteEntry.js',
         app2: 'app2@[app2Url]/remoteEntry.js',
       },
@@ -39,4 +42,4 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
-}
+};
