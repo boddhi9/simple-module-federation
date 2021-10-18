@@ -1,6 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ModuleFederationPlugin } = require('webpack').container;
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { ModuleFederationPlugin } = require('webpack').container
+const path = require('path')
 
 module.exports = {
   entry: './src/index',
@@ -25,7 +25,6 @@ module.exports = {
     ],
   },
   plugins: [
-    // To learn more about the usage of this plugin, please visit https://webpack.js.org/plugins/module-federation-plugin/
     new ModuleFederationPlugin({
       name: 'app3',
       filename: 'remoteEntry.js',
@@ -38,4 +37,4 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
-};
+}

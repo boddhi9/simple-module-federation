@@ -1,5 +1,4 @@
 import React from 'react'
-const Search = React.lazy(() => import('search/App'))
 
 const App = () => {
   return (
@@ -10,10 +9,7 @@ const App = () => {
         color: '#000',
       }}
     >
-      <h1>App Header</h1>
-      <Suspense fallback={'loading...'}>
-        <Search />
-      </Suspense>
+      <h1>Search</h1>
     </div>
   )
 }

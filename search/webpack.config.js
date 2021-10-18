@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 3002,
+    port: 3004,
   },
   output: {
     publicPath: 'auto',
@@ -26,11 +26,8 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app2',
+      name: 'search',
       filename: 'remoteEntry.js',
-      remotes: {
-        search: 'search@[searchUrl]/remoteEntry.js',
-      },
       exposes: {
         './App': './src/App',
       },
