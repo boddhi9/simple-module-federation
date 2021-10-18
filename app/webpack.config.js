@@ -27,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app1',
+      name: 'app',
       remotes: {
         header: 'header@[headerUrl]/remoteEntry.js',
         footer: 'footer@[footerUrl]/remoteEntry.js',
