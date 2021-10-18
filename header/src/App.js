@@ -12,10 +12,12 @@ const App = () => {
         fontFamily: 'Helvetica Neue',
       }}
     >
-      <h2 style={{ fontWeight: 400 }}>Header</h2>
-      <Suspense fallback={'loading...'}>
-        <Search />
-      </Suspense>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <h2 style={{ fontWeight: 400 }}>Header</h2>
+        <Suspense fallback={'loading...'}>
+          <Search />
+        </Suspense>
+      </div>
     </div>
   )
 }
