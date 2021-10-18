@@ -31,6 +31,7 @@ module.exports = {
       remotes: {
         header: 'header@[headerUrl]/remoteEntry.js',
         footer: 'footer@[footerUrl]/remoteEntry.js',
+        content: 'content@[contentUrl]/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
