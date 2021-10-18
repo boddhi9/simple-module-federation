@@ -29,7 +29,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'app1',
       remotes: {
-        header: 'header@[app2Url]/remoteEntry.js',
+        header: 'header@[headerUrl]/remoteEntry.js',
         app3: 'app3@[app3Url]/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
