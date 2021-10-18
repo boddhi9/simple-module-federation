@@ -34,7 +34,6 @@ module.exports = {
       },
       remotes: {
         content: 'content@[contentUrl]/remoteEntry.js',
-        search: 'search@[searchUrl]/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
