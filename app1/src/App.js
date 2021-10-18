@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-const Header = React.lazy(() => import('app2/App'))
+const Header = React.lazy(() => import('header/App'))
 const Footer = React.lazy(() => import('app3/App'))
 
 const App = () => {

@@ -9,6 +9,7 @@ const App = () => {
         backgroundColor: '#efefef',
         color: '#000',
         border: '1px solid #333',
+        padding: 3,
       }}
     >
       <h1>App Header</h1>
