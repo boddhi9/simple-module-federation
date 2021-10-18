@@ -11,7 +11,7 @@ const App = () => {
       }}
     >
       <div>
-        Search <input />
+        <input placeholder="Search" />
       </div>
     </div>
   )
