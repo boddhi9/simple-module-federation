@@ -36,6 +36,7 @@ module.exports = {
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
+    new ExternalTemplateRemotesPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
