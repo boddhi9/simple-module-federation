@@ -2,15 +2,7 @@
   "name": "module-federation",
   "private": true,
   "workspaces": {
-    "packages": [
-      "shell",
-      "app1",
-      "app2",
-      "header",
-      "footer",
-      "content",
-      "search"
-    ]
+    "packages": ["shell", "app1", "app2", "header", "footer", "content", "search"]
   },
   "scripts": {
     "start": "lerna run --parallel start",
@@ -18,10 +10,5 @@
   },
   "devDependencies": {
     "lerna": "^4.0.0"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
-    "@mui/material": "^5.0.4"
   }
 }
