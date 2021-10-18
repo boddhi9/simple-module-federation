@@ -9,7 +9,7 @@ const App = () => {
         color: '#000',
       }}
     >
-      <h1>Footer</h1>
+      <h2>Footer</h2>
     </div>
   )
 }

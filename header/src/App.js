@@ -13,7 +13,7 @@ const App = () => {
         margin: 10,
       }}
     >
-      <h1>Header</h1>
+      <h2>Header</h2>
       <Suspense fallback={'loading...'}>
         <Search />
       </Suspense>
