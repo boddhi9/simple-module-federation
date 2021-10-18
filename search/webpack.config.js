@@ -32,7 +32,7 @@ module.exports = {
         './App': './src/App',
       },
       shared: {
-        react: { singleton: true },
+        react: { singleton: true, eager: true },
         'react-dom': { singleton: true },
         '@emotion/react': { singleton: true },
         '@emotion/styled': { singleton: true },
