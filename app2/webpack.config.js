@@ -33,7 +33,7 @@ module.exports = {
         './App': './src/App',
       },
       remotes: {
-        footer: 'footer@[footerUrl]/remoteEntry.js',
+        content: 'content@[contentUrl]/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
