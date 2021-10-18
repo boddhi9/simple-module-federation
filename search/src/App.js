@@ -1,4 +1,5 @@
 import React from 'react'
+import TextField from '@mui/material/TextField'
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       }}
     >
       <div>
-        <input placeholder="Search" />
+        <TextField label="Search" variant="standard" />
       </div>
     </div>
   )
