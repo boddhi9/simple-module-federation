@@ -32,7 +32,8 @@ module.exports = {
         './App': './src/App',
       },
       shared: {
-        react: { singleton: true, eager: true },
+        ...packageJsonDeps,
+        react: { singleton: true, eager: true, requiredVersion: packageJsonDeps.react },
         'react-dom': { singleton: true },
         '@emotion/react': { singleton: true },
         '@emotion/styled': { singleton: true },
