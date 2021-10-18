@@ -8,11 +8,12 @@ const App = () => {
         textAlign: 'center',
         backgroundColor: '#efefef',
         color: '#000',
-        border: '1px solid #333',
-        padding: 3,
+        border: '1px solid #ececec',
+        padding: 5,
+        margin: 10,
       }}
     >
-      <h1>App Header</h1>
+      <h1>Header</h1>
       <Suspense fallback={'loading...'}>
         <Search />
       </Suspense>

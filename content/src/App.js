@@ -4,12 +4,14 @@ const App = () => {
   return (
     <div
       style={{
+        margin: 10,
+        padding: 10,
         textAlign: 'center',
-        backgroundColor: '#fff',
-        color: '#000',
+        backgroundColor: '#000',
+        color: '#fff',
       }}
     >
-      <h1>Footer</h1>
+      <h1>Content</h1>
     </div>
   )
 }
