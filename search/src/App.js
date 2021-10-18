@@ -6,6 +6,8 @@ const App = () => {
       style={{
         textAlign: 'center',
         color: '#000',
+        fontFamily: 'Helvetica Neue',
+        fontWeight: 400,
       }}
     >
       <div>

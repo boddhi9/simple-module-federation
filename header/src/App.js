@@ -8,7 +8,9 @@ const App = () => {
         textAlign: 'center',
         backgroundColor: '#E3B448',
         color: '#000',
-        padding: 5,
+        padding: 10,
+        fontFamily: 'Helvetica Neue',
+        fontWeight: 400,
       }}
     >
       <h2>Header</h2>
