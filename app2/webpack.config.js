@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { ModuleFederationPlugin } = require('webpack').container
+const ExternalTemplateRemotesPlugin = require('external-remotes-plugin')
 const path = require('path')
 
 module.exports = {
