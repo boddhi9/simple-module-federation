@@ -29,11 +29,11 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'app2',
       filename: 'remoteEntry.js',
-      remotes: {
-        search: 'search@[searchUrl]/remoteEntry.js',
-      },
       exposes: {
         './App': './src/App',
+      },
+      remotes: {
+        search: 'search@[searchUrl]/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
