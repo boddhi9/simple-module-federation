@@ -1,4 +1,4 @@
-window.app1Url = 'http://localhost:3001'
-window.app2Url = 'http://localhost:3006'
+window.app1Url = 'http://localhost:3001';
+window.app2Url = 'http://localhost:3006';
 
-import('./bootstrap')
+import('./bootstrap');
