@@ -34,7 +34,7 @@ module.exports = {
       },
       shared: {
         react: { singleton: true, eager: true, requiredVersion: deps.react },
-        'react-dom': { singleton: true },
+        'react-dom': { singleton: true, eager: true, requiredVersion: deps['react-dom'] },
         '@emotion/react': { singleton: true },
         '@emotion/styled': { singleton: true },
         '@mui/material': { singleton: true },
