@@ -30,7 +30,7 @@ module.exports = {
       name: 'app1',
       remotes: {
         header: 'header@[headerUrl]/remoteEntry.js',
-        app3: 'app3@[app3Url]/remoteEntry.js',
+        footer: 'footer@[footerUrl]/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),

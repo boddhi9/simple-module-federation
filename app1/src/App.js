@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 const Header = React.lazy(() => import('header/App'))
-const Footer = React.lazy(() => import('app3/App'))
+const Footer = React.lazy(() => import('footer/App'))
 
 const App = () => {
   return (
