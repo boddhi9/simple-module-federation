@@ -6,8 +6,9 @@ const App = () => {
     <div
       style={{
         textAlign: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#efefef',
         color: '#000',
+        border: '1px solid #333',
       }}
     >
       <h1>App Header</h1>
