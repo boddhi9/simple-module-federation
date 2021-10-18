@@ -5,7 +5,7 @@ const App = () => {
     <div
       style={{
         textAlign: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#3A6B35',
         color: '#000',
       }}
     >

@@ -6,9 +6,8 @@ const App = () => {
     <div
       style={{
         textAlign: 'center',
-        backgroundColor: '#efefef',
+        backgroundColor: '#E3B448',
         color: '#000',
-        border: '1px solid #ececec',
         padding: 5,
         margin: 10,
       }}
