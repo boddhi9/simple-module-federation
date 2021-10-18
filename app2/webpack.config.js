@@ -33,7 +33,7 @@ module.exports = {
         './App': './src/App',
       },
       remotes: {
-        search: 'search@[searchUrl]/remoteEntry.js',
+        search: 'search@http://localhost:3004/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
