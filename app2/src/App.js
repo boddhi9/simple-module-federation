@@ -9,9 +9,6 @@ const App = () => {
       <Suspense fallback={'loading...'}>
         <Content />
       </Suspense>
-      <Suspense fallback={'loading...'}>
-        <Footer />
-      </Suspense>
     </div>
   )
 }
