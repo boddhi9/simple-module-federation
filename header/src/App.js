@@ -12,7 +12,7 @@ const App = () => {
         fontFamily: 'Helvetica Neue',
       }}
     >
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h2 style={{ fontWeight: 400 }}>Header</h2>
         <Suspense fallback={'loading...'}>
           <Search />
