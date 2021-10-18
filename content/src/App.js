@@ -9,10 +9,9 @@ const App = () => {
         backgroundColor: '#CBD18F',
         color: '#000',
         fontFamily: 'Helvetica Neue',
-        fontWeight: 400,
       }}
     >
-      <h1>Content</h1>
+      <h1 style={{ fontWeight: 400 }}>Content</h1>
     </div>
   )
 }

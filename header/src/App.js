@@ -10,10 +10,9 @@ const App = () => {
         color: '#000',
         padding: 10,
         fontFamily: 'Helvetica Neue',
-        fontWeight: 400,
       }}
     >
-      <h2>Header</h2>
+      <h2 style={{ fontWeight: 400 }}>Header</h2>
       <Suspense fallback={'loading...'}>
         <Search />
       </Suspense>
