@@ -35,9 +35,9 @@ module.exports = {
       shared: {
         react: { singleton: true, eager: true, requiredVersion: deps.react },
         'react-dom': { singleton: true, eager: true, requiredVersion: deps['react-dom'] },
-        '@emotion/react': { singleton: true },
-        '@emotion/styled': { singleton: true },
-        '@mui/material': { singleton: true },
+        '@emotion/react': { singleton: true, eager: true, requiredVersion: deps['@emotion/react'] },
+        '@emotion/styled': { singleton: true, eager: true, requiredVersion: deps['@emotion/styled'] },
+        '@mui/material': { singleton: true, eager: true, requiredVersion: deps['@mui/material'] },
       },
     }),
     new HtmlWebpackPlugin({
