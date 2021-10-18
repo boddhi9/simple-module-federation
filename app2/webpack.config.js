@@ -28,14 +28,14 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: 'app2',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './App': './src/App',
+      },
       remotes: {
         header: 'header@[headerUrl]/remoteEntry.js',
         footer: 'footer@[footerUrl]/remoteEntry.js',
         content: 'content@[contentUrl]/remoteEntry.js',
-      },
-      filename: 'remoteEntry.js',
-      exposes: {
-        './App': './src/App',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
