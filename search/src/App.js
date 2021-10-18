@@ -5,12 +5,11 @@ const App = () => {
     <div
       style={{
         textAlign: 'center',
-        backgroundColor: '#fff',
         color: '#000',
       }}
     >
       <div>
-        <input />
+        Search <input />
       </div>
     </div>
   )
