@@ -9,7 +9,9 @@ const App = () => {
         color: '#000',
       }}
     >
-      <h1>Search</h1>
+      <div>
+        <input />
+      </div>
     </div>
   )
 }

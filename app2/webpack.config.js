@@ -46,14 +46,14 @@ module.exports = {
                 try {
                   return window.search.init(arg)
                 } catch(e) {
-                  console.log('remote container already initialized')
+                  console.warn('remote container already initialized')
                 }
               }
             }
             resolve(proxy)
           }
           // inject this script with the src set to the versioned remoteEntry.js
-          document.head.appendChild(script);
+          document.head.appendChild(script)
         })
         `,
       },
