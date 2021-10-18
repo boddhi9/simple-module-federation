@@ -4,7 +4,6 @@ const App = () => {
   return (
     <div
       style={{
-        margin: 10,
         padding: 10,
         textAlign: 'center',
         backgroundColor: '#CBD18F',
