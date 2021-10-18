@@ -5,7 +5,7 @@ const Content = React.lazy(() => import('content/App'))
 
 const App = () => {
   return (
-    <div style={{ margin: 10, bordeRadius: 10, border: '1px solid #eee' }}>
+    <div style={{ margin: 10, bordeRadius: 10, border: '1px solid #333' }}>
       <Suspense fallback={'loading...'}>
         <Header />
       </Suspense>
