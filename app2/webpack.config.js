@@ -34,6 +34,7 @@ module.exports = {
       },
       remotes: {
         content: 'content@[contentUrl]/remoteEntry.js',
+        search: 'search@http://localhost:3004/remoteEntry.js',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
