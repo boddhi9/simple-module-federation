@@ -38,8 +38,6 @@ module.exports = {
           const script = document.createElement('script')
           script.src = remoteUrl
           script.onload = () => {
-            // the injected script has loaded and is available on window
-            // we can now resolve this Promise
             const proxy = {
               get: (request) => window.search.get(request),
               init: (arg) => {
@@ -52,7 +50,6 @@ module.exports = {
             }
             resolve(proxy)
           }
-          // inject this script with the src set to the versioned remoteEntry.js
           document.head.appendChild(script)
         })
         `,

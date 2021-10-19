@@ -12,7 +12,7 @@ const App = () => {
       }}
     >
       <div>
-        <TextField label="Search" variant="standard" />
+        <TextField label="Search" variant="standard" style={{ color: '#000' }} />
       </div>
     </div>
   )
